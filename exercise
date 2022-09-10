@@ -1,0 +1,7 @@
+#include <stdio.h>
+int main()
+{
+	printf("慧慧喜欢小羊吖");
+
+	return 0;
+}
