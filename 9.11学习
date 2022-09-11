@@ -1,0 +1,53 @@
+#define  _CRT_SECURE_NO_WARNINGS 1
+//计算机中的单位：bit比特位（1）  byte字节（8bit） kb（1024byte）  mb（1024kb）  gb  tb  pb...
+#include <stdio.h>
+int main()
+{
+	            /////数据类型/////
+	printf("%d\n", 100);
+		//打印一个整数
+	printf("%d\n", sizeof(char));
+	//计算字符数据类型所占空间的大小(1byte)
+	printf("%d\n", sizeof(int));
+	//计算短整型所占空间的大小(4byte)
+	printf("%d\n", sizeof(short));
+	//计算短整型所占空间的大小(2byte)
+	printf("%d\n", sizeof(long));
+	//计算长整型所占空间的大小(4byte)
+	printf("%d\n", sizeof(long long));
+	//计算更长的整型所占空间的大小(8byte)
+	printf("%d\n", sizeof(float));
+	//计算单精度浮点数所占空间的大小(4byte)
+	printf("%d\n", sizeof(double));
+	//计算双精度浮点数所占空间的大小(8byte)
+
+	          /////创建变量/////
+	//创建变量：类型  变量的名字=number   可不加数字但不推荐
+//%d-整型    %f-float     %lf-double
+	int  age = 17;
+	age = age + 1;
+	printf("%d\n", age);
+	double weight = 52.0;
+	weight = weight - 0.2;
+	printf("%lf\n", weight);
+
+	            /////区分全局变量与局部变量/////
+	int  a = 10000;
+	//局部变量【在{}里面】
+	//局部变量与全局变量冲突时，优先局部变量（不建议名字相同）
+	printf("%d\n", a);
+
+	            /////数据求和/////
+	    int b = 0;
+		int c = 0;
+		int sum =0 ;
+		sum = a + b;
+		scanf(" %d%d", &b ,& c);
+		//正常情况下scanf不可用  点左下角输出 拷入需要的符号 #放在所有的第一行define 复制内容 1
+		printf("sum%d\n", sum);
+		//出来结果后输入数字之间加空格即可
+
+	return 0;
+}
+    int   a = 10;
+	//全局变量【在{}外面】
