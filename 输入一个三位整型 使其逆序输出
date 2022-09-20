@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main(){
+    double a;//88.678
+    printf("请输入一个三位小数:\n");
+    scanf("%lf",&a);
+    a=a*100;//8867.8
+    a=a+0.5;//8868.3
+    a=(int)a;
+    a=a/100;
+    printf("%lf\n",a);
+return 0;
+}
