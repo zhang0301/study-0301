@@ -1,0 +1,22 @@
+法1
+#include<stdio.h>
+int main(){
+	int a,b,s,g;
+	scanf("%d",&a);//345
+	b=a/100;//3
+	s=a/10%10;//4
+	g=a%10;//5
+	printf("%d%d%d",g,s,b);
+return 0;
+ } 
+ 法2
+ #include<stdio.h>
+int main(){
+int a,g,s,b;
+scanf("%d",&a);//输入896
+b=a/100;//8
+s=a/10-a/100*10;//89-80
+g=a-s*10-b*100;//896-90-800
+printf("%d%d%d",g,s,b);
+return 0;
+}
